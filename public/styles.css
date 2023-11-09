@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(220, 238, 220);
+}
+
+header {
+  background-color: #22b335;
+  text-align: center; /* Center the title text */
+  padding: 16px 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  background: #22b335; /* Dark background for the footer */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed; /* Fix at the bottom */
+  bottom: 0;
+  width: 100%; /* Full width */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.note {
+  background: #fff;
+  border-left: 5px solid #4caf50; /* Add a green border to the left for style */
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+  overflow: hidden; /* Ensures the contents do not overflow */
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  background-color: transparent;
+  color: #4caf50; /* Green color for the delete button */
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  width: 480px;
+  margin: 30px auto;
+}
+
+form input,
+form textarea {
+  width: calc(100% - 8px); /* Adjust width to account for padding */
+  border: 1px solid #ddd; /* Subtle border for inputs */
+  margin: 4px 0;
+  padding: 10px; /* More padding for better readability */
+  border-radius: 3px; /* Rounded corners for inputs */
+}
+
+form button {
+  background: #4caf50; /* Green button */
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the add button */
+
+.add-button {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional global styles for buttons */
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
